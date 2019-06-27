@@ -114,11 +114,11 @@ class Game extends Component {
             <Paper className="game">
                 <div className="controls">
                     <Typography component='span' variant='h6'>Columns: </Typography>
-                    <RemoveCircleOutlineIcon className="addRemove" onClick={() => this.setState({width: this.state.width - 1})} />
+                    {this.state.width > 1 && <RemoveCircleOutlineIcon className="addRemove" onClick={() => this.setState({width: this.state.width - 1})} />}
                     <AddCircleOutlineIcon className="addRemove" onClick={() => this.setState({width: this.state.width + 1})} />
                     <br />
                     <Typography component='span' variant='h6'>Rows: </Typography>
-                    <RemoveCircleOutlineIcon className="addRemove" onClick={() => this.setState({height: this.state.height - 1})} />
+                    {this.state.height > 1 && <RemoveCircleOutlineIcon className="addRemove" onClick={() => this.setState({height: this.state.height - 1})} />}
                     <AddCircleOutlineIcon className="addRemove" onClick={() => this.setState({height: this.state.height + 1})}/>
                 </div>
                 <div className="board">

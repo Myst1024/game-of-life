@@ -2,8 +2,8 @@
   text-align:center;
 }
 
-.page-header {
-  margin: 5%;
+.App > .page-header {
+  margin: 3%;
 }
 
 .controls {
