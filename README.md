@@ -1,7 +1,5 @@
 # Game of Life
-An implementation of Conway's game of life in React
-Hosted here: https://myst1024.github.io/game-of-life/
-
+An implementation of Conway's game of life using React
 
 ## Requirements
 - npm
