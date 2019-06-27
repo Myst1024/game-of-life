@@ -19,6 +19,7 @@ class Game extends Component {
 
     // takes 2D board array and generates a grid of <Cell>s based on board dimensions
     createDisplay() {
+        // For each row, create a container.  For each column, populate with Cells 
         const display = this.state.board.map((row, xIndex) => {
             const column = row.map((cell, yIndex) => {
                 return (
@@ -52,8 +53,8 @@ class Game extends Component {
         return newBoard;
     }
 
+    // Calculates the life and death of each cell, then sets the new board state accordingly
     nextGeneration() {
-        
         let newBoard = this.state.board.map((row, x) => {
             return row.map((cell, y) => {
                 let alive = false;
@@ -105,9 +106,6 @@ class Game extends Component {
     }
 
     render() {
-
-
-
         const display = this.createDisplay();
         
         return (
